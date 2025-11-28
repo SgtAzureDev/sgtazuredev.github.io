@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyx Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">SgtAzureDev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home-section">
+        <canvas id="asciiCanvas"></canvas>
+        <div class="home-content">
+            <h1 class="glitch-type">
+                <span id="glitch-text"></span>
+                <span class="cursor">|</span>
+            </h1>                                 
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+
+        <h2 class="section-title center">MY <span>SKILLS</span></h2>
+        <div class="section-underline"></div>
+    
+        <!-- Security Section -->
+        <div class="skill-category">
+            <h3 class="category-title">Security</h3>
+            <div class="category-underline"></div>
+    
+            <div class="skills-grid">
+    
+                <!-- Penetration Testing -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/bug.svg" class="skill-svg">
+                        <p class="skill-name">Penetration Testing</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 40%"></div></div>
+                </div>
+    
+                <!-- Network Security -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/network.svg" class="skill-svg">
+                        <p class="skill-name">Network Security</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 45%"></div></div>
+                </div>
+    
+                <!-- Threat Analysis -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/shield.svg" class="skill-svg">
+                        <p class="skill-name">Threat Analysis</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 80%"></div></div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- Programming Section -->
+        <div class="skill-category">
+            <h3 class="category-title">Programming</h3>
+            <div class="category-underline"></div>
+    
+            <div class="skills-grid">
+    
+                <!-- Python -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/python.svg" class="skill-svg">
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 70%"></div></div>
+                </div>
+    
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/javascript.svg" class="skill-svg">
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 55%"></div></div>
+                </div>
+    
+                <!-- C++ -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <img src="icons/cpp.svg" class="skill-svg">
+                        <p class="skill-name">C/C++</p>
+                    </div>
+                    <div class="skill-bar"><div style="width: 60%"></div></div>
+                </div>
+    
+            </div>
+        </div>    
+    
+        <!-- Tools -->
+        <h3 class="category-title">Tools & Technologies</h3>
+        <div class="category-underline"></div>
+        <div class="tools-row">
+            <span class="tool-badge">Kali Linux</span>
+            <span class="tool-badge">Wireshark</span>
+            <span class="tool-badge">Metasploit</span>
+            <span class="tool-badge">Burp Suite</span>
+            <span class="tool-badge">Nmap</span>
+            <span class="tool-badge">Docker</span>
+            <span class="tool-badge">AWS</span>
+            <span class="tool-badge">IDS/IPS</span>
+            <span class="tool-badge">Firewall Config</span>
+        </div>
+    </section>    
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+        <h2 class="project-title center">MY <span>PROJECTS</span></h2>
+        <div class="section-underline"></div>
+    
+        <!-- Filter buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Security</button>
+            <button class="filter-btn">Web</button>
+            <button class="filter-btn">App</button>
+        </div>
+    
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-preview">
+                    <div class="project-icons">
+                        <a href="https://yourlink.com" target="_blank">
+                            <img src="icons/linked-symbol.svg">
+                        </a>
+                        <a href="https://github.com/SgtAzureDev/ai-cyber-threat-intel-agent" target="_blank">
+                            <img src="icons/github.svg">
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="project-content">
+                    <h3 class="project-title"><span>AI Threat Intel Agent</span></h3>
+                    <p class="project-desc">An AI-powered system that automates threat intelligence intake, enrichment, scoring, and reporting. Designed to streamline cybersecurity workflows with real-time IOC analysis and smart decision-making.</p>
+            
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Google ADK</span>
+                        <span>NLP</span>
+                    </div>
+                </div>           
+            </div>         
+        </div> 
+    </section>    
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section">
+
+        <h2 class="contact-title">CONTACT <span>ME</span></h2>
+        <div class="contact-underline"></div>
+    
+        <div class="contact-wrapper">
+    
+            <!-- LEFT SIDE -->
+            <div class="contact-left">
+    
+                <h3>Get in Touch</h3>
+                <p class="contact-subtext">
+                    Feel free to reach out for collaborations, consulting work, or just to say hello!
+                </p>
+    
+                <div class="contact-info-item">
+                    <img src="icons/email.svg" class="icon">
+                    <span>yourmail@example.com</span>
+                </div>
+    
+                <div class="contact-info-item">
+                    <img src="icons/phone.svg" class="icon">
+                    <span>+91 9876543210</span>
+                </div>
+    
+                <div class="contact-info-item">
+                    <img src="icons/location.svg" class="icon">
+                    <span>Pune, India</span>
+                </div>
+    
+                <div class="contact-socials">
+                    <a href="#" class="social-circle"><img src="icons/github.svg"></a>
+                    <a href="#" class="social-circle"><img src="icons/linkedin.svg"></a>
+                    <a href="#" class="social-circle"><img src="icons/instagram.svg"></a>
+                </div>
+    
+            </div>
+    
+            <!-- RIGHT SIDE FORM -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" class="contact-input">
+                <input type="email" placeholder="Your Email" class="contact-input">
+                <input type="text" placeholder="Subject" class="contact-input">
+                <textarea placeholder="Your Message" class="contact-textarea"></textarea>
+    
+                <button class="contact-btn">SEND MESSAGE</button>
+            </form>
+    
+        </div>
+    
+    </section>      
+
+</body>
+</html>
