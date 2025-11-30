@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(5, 7, 20, 0.8);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
     z-index: 999;
     border-bottom: 1px solid rgba(0, 150, 255, 0.3);
     animation: glowBorder 4s infinite alternate;
@@ -142,7 +142,7 @@ body {
 .cursor {
     color: #00eaff;
     margin-left: 3px;
-    animation: blink 0.6s infinite;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
@@ -242,6 +242,7 @@ body {
     height: 3px;
     background: linear-gradient(90deg, #00ffd5, #00a2ff);
     margin-bottom: 30px;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
@@ -398,7 +399,7 @@ body {
 }
 
 /* SHOW ICONS ON HOVER OF THE CARD TOP SECTION */
-.project-preview:hover .project-icons {
+.project-card:hover .project-icons {
     opacity: 1;
 }
 
@@ -485,11 +486,11 @@ body {
 }
 
 .contact-underline {
-    width: 60px;
+    width: 90px;
     height: 3px;
-    background: linear-gradient(90deg, #00eaff, #0077ff);
-    margin: 0 auto 60px auto;
-    border-radius: 20px;
+    background: linear-gradient(90deg, #00ffd5, #00a2ff);
+    margin: 10px auto 50px auto;
+    border-radius: 10px;
 }
 
 .contact-wrapper {

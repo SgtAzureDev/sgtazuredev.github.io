@@ -80,3 +80,16 @@ function type() {
 }
 
 type();
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_tw7zpzp", "template_gb2xduh", this)  /* Your Service ID and Template ID */
+        .then(() => {
+            alert("Message sent successfully!");
+            document.getElementById("contactForm").reset();  // Clear form after submission
+        })
+        .catch((error) => {
+            alert("Failed to send message.\n" + JSON.stringify(error));
+        });
+});

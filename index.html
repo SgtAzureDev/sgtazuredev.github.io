@@ -6,6 +6,14 @@
     <title>Nyx Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init("8o20P6_-m_0SfxcrO");  /* <-- replace with your EmailJS public key */
+    });
+    </script>
+
 </head>
 
 <body>
@@ -103,7 +111,7 @@
                 <div class="skill-card">
                     <div class="skill-header">
                         <img src="icons/cpp.svg" class="skill-svg">
-                        <p class="skill-name">C/C++</p>
+                        <p class="skill-name">C++</p>
                     </div>
                     <div class="skill-bar"><div style="width: 60%"></div></div>
                 </div>
@@ -186,12 +194,12 @@
     
                 <div class="contact-info-item">
                     <img src="icons/email.svg" class="icon">
-                    <span>yourmail@example.com</span>
+                    <span>sgtazuredev@example.com</span>
                 </div>
     
                 <div class="contact-info-item">
                     <img src="icons/phone.svg" class="icon">
-                    <span>+91 9876543210</span>
+                    <span>+91 8446926737</span>
                 </div>
     
                 <div class="contact-info-item">
@@ -200,22 +208,24 @@
                 </div>
     
                 <div class="contact-socials">
-                    <a href="#" class="social-circle"><img src="icons/github.svg"></a>
-                    <a href="#" class="social-circle"><img src="icons/linkedin.svg"></a>
-                    <a href="#" class="social-circle"><img src="icons/instagram.svg"></a>
+                    <a href="https://github.com/SgtAzureDev" class="social-circle"><img src="icons/github.svg"></a>
+                    <a href="https://www.linkedin.com/in/sreelakshmi-panicker-87506b342" class="social-circle"><img src="icons/linkedin.svg"></a>
+                    <a href="https://www.instagram.com/sgt.azure44" class="social-circle"><img src="icons/instagram.svg"></a>
                 </div>
     
             </div>
     
             <!-- RIGHT SIDE FORM -->
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" class="contact-input">
-                <input type="email" placeholder="Your Email" class="contact-input">
-                <input type="text" placeholder="Subject" class="contact-input">
-                <textarea placeholder="Your Message" class="contact-textarea"></textarea>
-    
-                <button class="contact-btn">SEND MESSAGE</button>
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="from_name" placeholder="Your Name" class="contact-input" required>
+                <input type="email" name="reply_to" placeholder="Your Email" class="contact-input" required>
+                <input type="text" name="subject" placeholder="Subject" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-textarea" required></textarea>
+
+                <button type="submit" class="contact-btn">SEND MESSAGE</button>
             </form>
+
+
     
         </div>
     
