@@ -18,7 +18,7 @@ body {
 
 /* gradient variable */
 :root {
-    --grad: linear-gradient(90deg, #004bff, #00d0ff);
+    --grad: linear-gradient(90deg, #00ffd5, #00a2ff);
     --grad-dark: linear-gradient(90deg, #002a70, #0085aa);
 }
 
