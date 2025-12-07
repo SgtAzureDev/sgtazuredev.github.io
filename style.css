@@ -460,7 +460,7 @@ body {
 }
 
 .project-title span {
-    background: linear-gradient(90deg, #00eaff, #0077ff);
+    background: linear-gradient(90deg, #00ffd5, #00a2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -480,7 +480,7 @@ body {
 }
 
 .contact-title span {
-    background: linear-gradient(90deg, #00eaff, #0077ff);
+    background: linear-gradient(90deg, #00ffd5, #00a2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
